@@ -21,15 +21,15 @@ export default class PlayerLevelController {
     this.skills = {
       regen: {
         type: 'regen',
-        level: 0,
+        level: 10,
       },
       health: {
         type: 'health',
-        level: 0,
+        level: 10,
       },
       body: {
         type: 'body',
-        level: 0,
+        level: 10,
       },
       bullet: {
         type: 'bullet',

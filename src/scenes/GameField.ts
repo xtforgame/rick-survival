@@ -71,7 +71,7 @@ export default class GameField extends Phaser.Scene {
     const waves = this.wavesController.getWaves(this.world)
     this.allEnemies = this.wavesController.getAllEnemies
 
-    this.physics.add.collider(
+    this.physics.add.overlap(
       this.player,
       this.allEnemies,
       (playerObject, enemyObject) => {
@@ -79,7 +79,7 @@ export default class GameField extends Phaser.Scene {
         const enemy = enemyObject as Enemy
 
         if (this.gameTime > enemy.getLastBodyDamage) {
-          enemy.takeDamage(player.getBodyDamage)
+          enemy.takeDamage(player.getBodyDamage * 10000)
           enemy.setLastBodyDamage = this.gameTime + player.getBodyAttackTime
         }
 

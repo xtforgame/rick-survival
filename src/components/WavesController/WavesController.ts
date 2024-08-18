@@ -27,6 +27,8 @@ export default class WavesController {
     count: number,
     interval = 1
   ): WaveAction {
+    count *= 10
+    interval = 0.01
     const countInGroup = Math.min(constants.ENEMY.MAXIMUM_IN_GROUP, count)
 
     const group = new EnemyGroup(this.scene, enemyType, countInGroup)

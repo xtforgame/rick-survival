@@ -87,7 +87,7 @@ export default class Actor extends Phaser.Physics.Arcade.Sprite {
   }
 
   public get getBodyAttackTime() {
-    return this.bodyAttackTime
+    return this.bodyAttackTime * 10
   }
 
   public checkFlip(): void {

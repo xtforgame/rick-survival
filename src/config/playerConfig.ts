@@ -12,7 +12,7 @@ const playerConfig: PlayerConfigType = {
     attackRate: 0,
     speed: 0,
     weapon: 'Pistol',
-    evolutions: ['MemoryRick', 'RickDoofus', 'RickBald', 'TinyRick'],
+    evolutions: ['RickRobot', 'RickDoofus', 'RickBald', 'TinyRick'],
   },
   CommanderRick: {
     type: 'CommanderRick',
